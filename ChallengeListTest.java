@@ -24,7 +24,7 @@ public class ChallengeListTest{
   }
 
   public static void testNonMonotone(){
-    // TODO @A
+    assertTrue("Le mot contient des lettres différentes", ChallengeList.nonMonotone("AAAAAAAAAAAAA"));
   }
 
   public static void testTarif(){
