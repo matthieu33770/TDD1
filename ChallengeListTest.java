@@ -20,7 +20,7 @@ public class ChallengeListTest{
   public static void testCommenceFini(){
     // TODO @B
     ChallengeList.commenceFini("AZERTYYTRE");
-    assertTrue("Les deux lettres du debut et de la fin sont identiques", test);
+    assertTrue("Les deux lettres du debut et de la fin sont identiques", false);
   }
 
   public static void testNonMonotone(){
