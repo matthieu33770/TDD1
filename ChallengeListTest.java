@@ -73,6 +73,15 @@ public class ChallengeListTest{
     else {
       throw new Error("\nKO!! >> "+message+" (exp : "+Arrays.toString(expected)+", res : "+Arrays.toString(res)+")");
     }
+
+  }
+  public static void assertEquals(String message, String expected, String res){
+    if (res.equals(expected)) {
+      System.out.println("\nOK >> "+message);
+    }
+    else {
+      throw new Error("\nKO!! >> "+message+" (exp : "+Arrays.toString(expected)+", res : "+Arrays.toString(res)+")");
+    }
   }
 
   public static void assertEquals(String message, double expected, double res){
