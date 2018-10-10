@@ -45,10 +45,10 @@ public class ChallengeList {
     boolean result = false;
     String test = mot;
     int l = test.length();
-    for(int i =0;i < l;i++){
-      String test1 = test.charAt(i);
-      String test2 = test.charAt(i+1);
-      if(test1.equals(test2)){
+    for(int i = 0;i < l-1;i++){
+      char test1 = test.charAt(i);
+      char test2 = test.charAt(i+1);
+      if(test1 != test2){
         result = true;
       }
     }
