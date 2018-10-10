@@ -14,7 +14,7 @@ public class ChallengeListTest{
   }
 
   public static void testPerimetreCarre(){
-    // TODO @A
+  assertEquals("test le perimetre", 16, ChallengeList.perimetreCarre(4));
   }
 
   public static void testCommenceFini(){
