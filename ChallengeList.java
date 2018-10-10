@@ -24,12 +24,13 @@ public class ChallengeList {
   * ex "ABCDDFAB" : true
   */
   public static boolean commenceFini(String mot){
-    String mot;
-    int longueur = mot.length();
-    String premiere = mot.substring (0,1);
-    String fin = mot.substring (longueur-1,longueur);
+    String mots;
+    boolean test=false;
+    int longueur = mots.length();
+    String premiere = mots.substring (0,1);
+    String fin = mots.substring (longueur-1,longueur);
     if (premiere.equals(fin)) {
-      boolean test = true;
+      test = true;
     }
     return test;
   }
