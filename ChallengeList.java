@@ -35,11 +35,6 @@ public class ChallengeList {
   */
   public static boolean nonMonotone(String mot){
     // TODO @B
-    String test;
-    int longueur = test.lenght()
-    if(){
-      
-    }
     return false;
   }
 
