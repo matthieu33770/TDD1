@@ -25,10 +25,10 @@ public class ChallengeList {
   */
   public static boolean commenceFini(String mot){
     String mots = mot;
-    boolean test=false;
+    boolean test = false;
     int longueur = mots.length();
     String premiere = mots.substring (0,1);
-    String fin = mots.substring (longueur-1,longueur);
+    String fin = mots.substring (longueur-2,longueur-1);
     if (premiere.equals(fin)) {
       test = true;
     }
