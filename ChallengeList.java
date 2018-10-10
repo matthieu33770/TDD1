@@ -14,7 +14,9 @@ public class ChallengeList {
   */
   public static int perimetreCarre(int a){
     // TODO @B
-    return 0;
+    int c = 0;
+    c = a*4
+    return c;
   }
 
   /**
@@ -33,6 +35,11 @@ public class ChallengeList {
   */
   public static boolean nonMonotone(String mot){
     // TODO @B
+    String test;
+    int longueur = test.lenght()
+    if(){
+      
+    }
     return false;
   }
 
