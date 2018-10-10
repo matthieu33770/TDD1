@@ -24,7 +24,7 @@ public class ChallengeList {
   * ex "ABCDDFAB" : true
   */
   public static boolean commenceFini(String mot){
-    String mots;
+    String mots = mot;
     boolean test=false;
     int longueur = mots.length();
     String premiere = mots.substring (0,1);
