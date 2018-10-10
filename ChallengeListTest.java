@@ -10,7 +10,7 @@ public class ChallengeListTest{
 
   public static void testMoyenne(){
     // TODO @Matthieu Test
-    assertEquals("Calcul de la moyenne", 16, ChallengeList.moyenne(10,12));
+    assertEquals("Calcul de la moyenne", 11, ChallengeList.moyenne(10,12));
   }
 
   public static void testPerimetreCarre(){
