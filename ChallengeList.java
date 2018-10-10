@@ -77,7 +77,24 @@ public class ChallengeList {
   **/
   public static String caGele(int temperature){
     // TODO @B
-    return null;
+    int temp = temperature;
+    String result = "";
+    if(temp > 90){
+      result = "Ca bouille !";
+    }
+    else if (temp > 5 && temp <= 90){
+      result = "R.A.S.";
+    }
+    else if (temp >= 0 && temp <= 5){
+      result = "Ca caille !";
+    }
+    else if(temp > -274 && temp < 0){
+      result = "Ca gele !";
+    }
+    else if(temp <= -274){
+      result = "erreur";
+    }
+    return result;
   }
 
   /**
@@ -93,6 +110,7 @@ public class ChallengeList {
   **/
   public static String[] filtreLetter(String[] noms, char lettre){
     // TODO @B
+
     return null;
   }
 
