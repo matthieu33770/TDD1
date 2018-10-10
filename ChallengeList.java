@@ -42,7 +42,15 @@ public class ChallengeList {
   */
   public static boolean nonMonotone(String mot){
     // TODO @B
-    return false;
+    boolean result = false;
+    String test = mot;
+    int l = test.length();
+    for(int i =0;i < l;i++){
+      if(test.charAt(i).equals(test.charAt(i+1))){
+        result = true;
+      }
+    }
+    return result;
   }
 
   /**
