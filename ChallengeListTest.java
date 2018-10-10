@@ -10,6 +10,8 @@ public class ChallengeListTest{
 
   public static void testMoyenne(){
     // TODO @B
+    int a =10, b=12;
+    System.out.println(moyenne);    
   }
 
   public static void testPerimetreCarre(){
