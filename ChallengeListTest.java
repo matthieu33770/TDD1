@@ -67,51 +67,51 @@ public class ChallengeListTest{
   }
 
   public static void assertEquals(String message, String[] expected, String[] res){
-    if (java.util.Arrays.deepEquals(expected, res)) {
-      System.out.println("\nOK >> "+message);
-    }
-    else {
-      throw new Error("\nKO!! >> "+message+" (exp : "+Arrays.toString(expected)+", res : "+Arrays.toString(res)+")");
-    }
+   if (java.util.Arrays.deepEquals(expected, res)) {
+     System.out.println("\nOK >> "+message);
+   }
+   else {
+     throw new Error("\nKO!! >> "+message+" (exp : "+Arrays.toString(expected)+", res : "+Arrays.toString(res)+")");
+   }
+ }
 
-  }
-  public static void assertEquals(String message, String expected, String res){
-    if (res.equals(expected)) {
-      System.out.println("\nOK >> "+message);
-    }
-    else {
-      throw new Error("\nKO!! >> "+message+" (exp : "+Arrays.toString(expected)+", res : "+Arrays.toString(res)+")");
-    }
-  }
+ public static void assertEquals(String message, String expected, String res){
+   if (res.equals(expected)) {
+     System.out.println("\nOK >> "+message);
+   }
+   else {
+     throw new Error("\nKO!! >> "+message+" (exp : "+expected+", res : "+res+")");
+   }
+ }
 
-  public static void assertEquals(String message, double expected, double res){
-    if (Math.abs(expected-res) < 0.0001) {
-      System.out.println("\nOK >> "+message);
-    }
-    else {
-      throw new Error("\nKO!! >> "+message+" (exp : "+expected+", res : "+res+")");
-    }
-  }
+ public static void assertEquals(String message, double expected, double res){
+   if (Math.abs(expected-res) < 0.0001) {
+     System.out.println("\nOK >> "+message);
+   }
+   else {
+     throw new Error("\nKO!! >> "+message+" (exp : "+expected+", res : "+res+")");
+   }
+ }
 
-  public static void assertEquals(String message, int expected, int res){
-    if (expected == res) {
-      System.out.println("\nOK >> "+message);
-    }
-    else {
-      throw new Error("\nKO!! >> "+message+" (exp : "+expected+", res : "+res+")");
-    }
-  }
+ public static void assertEquals(String message, int expected, int res){
+   if (expected == res) {
+     System.out.println("\nOK >> "+message);
+   }
+   else {
+     throw new Error("\nKO!! >> "+message+" (exp : "+expected+", res : "+res+")");
+   }
+ }
 
-  public static void assertTrue(String message, boolean res){
-    if (res) {
-      System.out.println("\nOK >> "+message);
-    }
-    else {
-      throw new Error("\nKO!! >> "+message+" (res : "+res+")");
-    }
-  }
+ public static void assertTrue(String message, boolean res){
+   if (res) {
+     System.out.println("\nOK >> "+message);
+   }
+   else {
+     throw new Error("\nKO!! >> "+message+" (res : "+res+")");
+   }
+ }
 
-  public static void assertFalse(String message, boolean res){
-    assertTrue(message, !res);
-  }
+ public static void assertFalse(String message, boolean res){
+   assertTrue(message, !res);
+ }
 }
