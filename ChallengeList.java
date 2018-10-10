@@ -46,7 +46,9 @@ public class ChallengeList {
     String test = mot;
     int l = test.length();
     for(int i =0;i < l;i++){
-      if(test.charAt(i).equals(test.charAt(i+1))){
+      String test1 = test.charAt(i);
+      String test2 = test.charAt(i+1);
+      if(test1.equals(test2)){
         result = true;
       }
     }
