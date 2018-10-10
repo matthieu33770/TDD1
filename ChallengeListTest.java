@@ -9,9 +9,9 @@ public class ChallengeListTest{
 
 
   public static void testMoyenne(){
-    // TODO @B
+    // TODO @Matthieu Test
     int a =10, b=12;
-    System.out.println(moyenne);    
+    System.out.println(moyenne);
   }
 
   public static void testPerimetreCarre(){
