@@ -29,6 +29,7 @@ public class ChallengeListTest{
 
   public static void testTarif(){
     // TODO @B
+    assertEquals("Le tarif est", "reduit", ChallengeList.tarif(5));
   }
 
   public static void testCaGele(){
