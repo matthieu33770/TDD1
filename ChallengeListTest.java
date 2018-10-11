@@ -46,9 +46,9 @@ public class ChallengeListTest{
   }
 
   public static void testFiltreShort(){
-    assertTrue("Le mot contient plus de deux lettres", ChallengeList.filtreLetter("Toto"));
-    assertTrue("Le mot contient moins de deux lettres", ChallengeList.filtreLetter("T"));
-
+    // TODO @B
+    assertEquals("La liste des noms est vide", [], ChallengeList.filtreShort(["te","ta","lo","j"]));
+    assertEquals("La liste des noms est tete et louis", [], ChallengeList.filtreShort(["tete","ta","louis","j"]));
   }
 
   public static void testFiltreLetter(){
