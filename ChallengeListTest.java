@@ -25,11 +25,15 @@ public class ChallengeListTest{
 
   public static void testNonMonotone(){
     assertTrue("Le mot contient des lettres différentes", ChallengeList.nonMonotone("AAAAAARAAAAAA"));
+    assertFalse("Le mot contient des lettres identiques", ChallengeList.nonMonotone("AAAAAAAAAAAAA"));
   }
 
   public static void testTarif(){
     // TODO @B
+    assertEquals("C'est gratuit", "gratuit", ChallengeList.tarif(1));
     assertEquals("C'est pour un tarif réduit", "reduit", ChallengeList.tarif(5));
+    assertEquals("C'est plein tarif ", "plein", ChallengeList.tarif(15));
+    assertEquals("C'est une erreur", "erreur", ChallengeList.tarif(-5));
   }
 
   public static void testCaGele(){
