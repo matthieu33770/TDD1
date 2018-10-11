@@ -124,8 +124,18 @@ public class ChallengeList {
   **/
   public static String[] filtreLetter(String[] noms, char lettre){
     // TODO @B
-
-    return null;
+    String tab[] = noms;
+    String test = "";
+    char l = lettre;
+    int size = tab.length;
+    String[] result = new String[size];
+    for (int i = 0;i < size - 1;i++){
+      test = tab[i];
+      if(test.charAt(0) == l){
+        //result.add = test;
+      }
+    }
+    return result;
   }
 
 
