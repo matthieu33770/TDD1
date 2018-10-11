@@ -66,7 +66,7 @@ public class ChallengeList {
     double tarif;
     int a= age;
     String resultat = "";
-    if (a<3) {
+    if (a>0 && a<3) {
       resultat = "gratuit";
     }
     else if (a>2 && age<13) {
