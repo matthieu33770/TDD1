@@ -32,7 +32,7 @@ public class ChallengeListTest{
   }
 
   public static void testCaGele(){
-    // TODO @A
+    assertTrue("Que pensez vous de la température ? ", ChallengeList.caGele(90));
   }
 
   public static void testFiltreShort(){
