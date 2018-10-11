@@ -46,15 +46,9 @@ public class ChallengeListTest{
   }
 
   public static void testFiltreShort(){
-<<<<<<< HEAD
     // TODO @B
-    assertEquals("La liste des noms est vide", [], ["te","ta","lo","j"]);
-    assertEquals("La liste des noms est tete et louis", [], ["tete","ta","louis","j"]);
-=======
-    assertTrue("Le mot contient plus de deux lettres", ChallengeList.filtreLetter("Toto"));
-    assertTrue("Le mot contient moins de deux lettres", ChallengeList.filtreLetter("T"));
-
->>>>>>> 442fed1c35eee6ced6aa084ff2a18324aedd5616
+    assertEquals("La liste des noms est vide", [], ChallengeList.filtreShort(["te","ta","lo","j"]));
+    assertEquals("La liste des noms est tete et louis", [], ChallengeList.filtreShort(["tete","ta","louis","j"]));
   }
 
   public static void testFiltreLetter(){
