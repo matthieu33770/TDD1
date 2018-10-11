@@ -47,6 +47,8 @@ public class ChallengeListTest{
 
   public static void testFiltreShort(){
     // TODO @B
+    assertEquals("La liste des noms est vide", [], ["te","ta","lo","j"]);
+    assertEquals("La liste des noms est tete et louis", [], ["tete","ta","louis","j"]);
   }
 
   public static void testFiltreLetter(){
