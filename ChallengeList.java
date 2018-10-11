@@ -64,21 +64,21 @@ public class ChallengeList {
   **/
   public static String tarif(int age){
     double tarif;
-    int age;
+    int a= age;
     String resultat = "";
-    if (age<3) {
+    if (a<3) {
       resultat = "gratuit";
     }
-    else if (age>2 || age<13) {
+    else if (a>2 && age<13) {
       resultat = "reduit";
     }
-    else if (age >12) {
+    else if (a>12) {
       resultat = "plein";
     }
-    else if (age<0) {
-      resultat "erreur";
+    else if (a<0) {
+      resultat = "erreur";
     }
-    return null;
+    return resultat;
   }
 
   /**
