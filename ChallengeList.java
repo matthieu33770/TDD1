@@ -115,7 +115,12 @@ public class ChallengeList {
   * parcourt le tableau de noms et retourne une liste de tous les noms qui ont une longueur > 2
   **/
   public static String[] filtreShort(String[] noms){
-    // TODO @A
+    String mot;
+    int longueur = mot.length;
+
+    if (longueur>2) {
+
+    }
     return null;
   }
 
