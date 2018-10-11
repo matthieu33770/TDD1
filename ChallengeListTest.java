@@ -38,11 +38,11 @@ public class ChallengeListTest{
   }
 
   public static void testCaGele(){
-    assertTrue("Que pensez vous de la température ? ", "Ca caille !", ChallengeList.caGele(4));
-    assertTrue("Que pensez vous de la température ? ","Ca gele !", ChallengeList.caGele(-5));
-    assertTrue("Que pensez vous de la température ? " , "R.A.S.", ChallengeList.caGele(46));
-    assertTrue("Que pensez vous de la température ? ", "Ca bouille !", ChallengeList.caGele(91));
-    assertTrue("Que pensez vous de la température ? ", "erreur", ChallengeList.caGele(-274));
+    assertEquals("Que pensez vous de la température ? ", "Ca caille !", ChallengeList.caGele(4));
+    assertEquals("Que pensez vous de la température ? ","Ca gele !", ChallengeList.caGele(-5));
+    assertEquals("Que pensez vous de la température ? " , "R.A.S.", ChallengeList.caGele(46));
+    assertEquals("Que pensez vous de la température ? ", "Ca bouille !", ChallengeList.caGele(91));
+    assertEquals("Que pensez vous de la température ? ", "erreur", ChallengeList.caGele(-274));
   }
 
   public static void testFiltreShort(){
