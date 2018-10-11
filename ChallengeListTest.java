@@ -25,6 +25,7 @@ public class ChallengeListTest{
 
   public static void testNonMonotone(){
     assertTrue("Le mot contient des lettres différentes", ChallengeList.nonMonotone("AAAAAARAAAAAA"));
+    assertTrue("Le mot contient des lettres différentes", ChallengeList.nonMonotone("AAAAAAAAAAAA"));
   }
 
   public static void testTarif(){
@@ -33,7 +34,11 @@ public class ChallengeListTest{
   }
 
   public static void testCaGele(){
-    assertTrue("Que pensez vous de la température ? ", ChallengeList.caGele(90));
+    assertTrue("Que pensez vous de la température ? ", ChallengeList.caGele(4));
+    assertTrue("Que pensez vous de la température ? ", ChallengeList.caGele(-5));
+    assertTrue("Que pensez vous de la température ? ", ChallengeList.caGele(46));
+    assertTrue("Que pensez vous de la température ? ", ChallengeList.caGele(91));
+    assertTrue("Que pensez vous de la température ? ", ChallengeList.caGele(-90));
   }
 
   public static void testFiltreShort(){
