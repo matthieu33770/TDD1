@@ -38,17 +38,23 @@ public class ChallengeListTest{
   }
 
   public static void testCaGele(){
-    assertEquals("Ca caille !", "Ca caille !", ChallengeList.caGele(4));
-    assertEquals("Ca gele !","Ca gele !", ChallengeList.caGele(-5));
-    assertEquals("R.A.S." , "R.A.S.", ChallengeList.caGele(46));
-    assertEquals("Ca bouille !", "Ca bouille !", ChallengeList.caGele(91));
-    assertEquals("erreur", "erreur", ChallengeList.caGele(-274));
+    assertEquals("Que pensez vous de la température ? ", "Ca caille !", ChallengeList.caGele(4));
+    assertEquals("Que pensez vous de la température ? ","Ca gele !", ChallengeList.caGele(-5));
+    assertEquals("Que pensez vous de la température ? " , "R.A.S.", ChallengeList.caGele(46));
+    assertEquals("Que pensez vous de la température ? ", "Ca bouille !", ChallengeList.caGele(91));
+    assertEquals("Que pensez vous de la température ? ", "erreur", ChallengeList.caGele(-274));
   }
 
   public static void testFiltreShort(){
+<<<<<<< HEAD
     // TODO @B
     assertEquals("La liste des noms est vide", [], ["te","ta","lo","j"]);
     assertEquals("La liste des noms est tete et louis", [], ["tete","ta","louis","j"]);
+=======
+    assertTrue("Le mot contient plus de deux lettres", ChallengeList.filtreLetter("Toto"));
+    assertTrue("Le mot contient moins de deux lettres", ChallengeList.filtreLetter("T"));
+
+>>>>>>> 442fed1c35eee6ced6aa084ff2a18324aedd5616
   }
 
   public static void testFiltreLetter(){
