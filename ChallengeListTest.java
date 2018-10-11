@@ -21,15 +21,12 @@ public class ChallengeListTest{
     // TODO @B
     //ChallengeList.commenceFini("AZERTYYTREAZ");
     assertTrue("Les deux lettres du debut et de la fin sont identiques", ChallengeList.commenceFini("AZERTYYTREAZ"));
+    assertFalse("Les deux lettres du debut et de la fin sont différentes", ChallengeList.commenceFini("AZERTYYTRE"));
   }
 
   public static void testNonMonotone(){
     assertTrue("Le mot contient des lettres différentes", ChallengeList.nonMonotone("AAAAAARAAAAAA"));
-<<<<<<< HEAD
     assertFalse("Le mot contient des lettres identiques", ChallengeList.nonMonotone("AAAAAAAAAAAAA"));
-=======
-    assertTrue("Le mot contient des lettres différentes", ChallengeList.nonMonotone("AAAAAAAAAAAA"));
->>>>>>> b5c06d8eff52ad92ad24fec2ce51d1e6c01cedc4
   }
 
   public static void testTarif(){
